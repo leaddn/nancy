@@ -58,3 +58,49 @@ $(document).ready(function(){
     $('#contact-section').load("contact.html");
  
  });
+  
+    /**
+     * Easy selector helper function
+     */
+    const select = (el, all = false) => {
+      el = el.trim()
+      if (all) {
+        return [...document.querySelectorAll(el)]
+      } else {
+        return document.querySelector(el)
+      }
+    }
+  
+    /**
+     * Easy event listener function
+     */
+    const on = (type, el, listener, all = false) => {
+      let selectEl = select(el, all)
+      if (selectEl) {
+        if (all) {
+          selectEl.forEach(e => e.addEventListener(type, listener))
+        } else {
+          selectEl.addEventListener(type, listener)
+        }
+      }
+    }
+
+  /**
+   * Porfolio isotope and filter
+   */
+   window.addEventListener('load', () => {
+    let galleryContainer = select('.gallery-container');
+    if (galleryContainer) {
+      let $galleryIsotope = $('.gallery-container').isotope({
+        itemSelector: '.gallery-item'
+      });
+
+      // filter items on button click
+      $('.filter-button-group').on('click', 'button', function() {
+          var filterValue = $(this).attr('data-filter');
+          $galleryIsotope.isotope({ filter: filterValue});
+      })
+
+    }
+
+  });

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Sortir à Nancy</title>
+        <title>Nancy</title>
         <!-- Jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Favicon-->
@@ -15,6 +15,9 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+        <!-- Vendor CSS Files -->
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
@@ -23,76 +26,97 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <!--<a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>-->
+                <a class="navbar-brand text-light" href="#page-top"><!--<img src="assets/img/navbar-logo.svg" alt="..." />-->Nancy</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#food">Food & Drink</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#culture">Culture</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#loisirs">Loisirs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#bars">Soirées & Bars</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#plans">Bons Plans</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#histoire">Histoire</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#news">Actualités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#activités">Activités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallerie</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Nancy Tour</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Carousel -->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/photos/IMG_20191219_190508.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h1>Nancy, Ville d'histoire
-                    </h1>
-                    <a class="btn btn-outline-light" href="#culture" role="button">Voir</a>
+        <div class="top-header">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/photos/IMG_20191219_190508.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-flex flex-column justify-content-evenly align-items-center mt-4">
+                        <h1 class="title">Bienvenue à <span style="color: #e20717; text-shadow: -2px -2px 1px #585857">Nancy</span>
+                        </h1>
+                        <h4 class="subtitle">non inultus premor</h4>
+                        <a class="btn btn-danger text-uppercase" href="#histoire" role="button">Découvrir</a>
+                    </div>
+                  </div>
+                    <!--
+                    <div class="carousel-item">
+                        <img src="./assets/img/photos/IMG-20190705-WA0008.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h1>Nancy, Ville de fêtes
+                            </h1>
+                            <a class="btn btn-outline-light" href="#bars" role="button">Danser</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/photos/IMG_20200709_182446.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h1>Nancy, Ville verte
+                                
+                            </h1>
+                            <a class="btn btn-outline-light" href="#loisirs" role="button">Explorer</a>
+                        </div>
+                    </div> 
+                    </div>-->
+                    <!--                
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button> -->
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/photos/IMG-20190705-WA0008.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h1>Nancy, Ville de fêtes
-                    </h1>
-                    <a class="btn btn-outline-light" href="#bars" role="button">Danser</a>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/photos/IMG_20200709_182446.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h1>Nancy, Ville verte
-                          
-                    </h1>
-                    <a class="btn btn-outline-light" href="#loisirs" role="button">Explorer</a>
-                </div>
-              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        <!-- Masthead-->
-        <!--
-        <header class="masthead">
+        </div>
+        
+        
+
+        <!-- Histoire -->
+        <section class="page-section" id="histoire">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                <div class="text-center d-flex flex-column align-items-center">
+                    <h2 class="section-heading text-uppercase">Histoire</h2>
+                    <hr class="mb-5"/>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img src="./assets/img/photos/IMG_20190621_211606.jpg" alt="" width="100%">
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="my-3">Sa Région</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="my-3">Son Passé</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
             </div>
-        </header>
-        -->
-        <!-- Services-->
-        <section class="page-section" id="news">
+        </section>
+
+        <!-- Actualités -->
+        <section class="page-section bg-dark text-light" id="news">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">News</h2>
+                    <h2 class="section-heading text-uppercase">Actualités</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row text-center">
@@ -123,11 +147,11 @@
                 </div>
             </div>
         </section>
-
-        <section class="page-section bg-light" id="food">
+        <!-- Activités -->
+        <section class="page-section" id="activités">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Food & Drink</h2>
+                    <h2 class="section-heading text-uppercase">Activités</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row">
@@ -141,80 +165,8 @@
                                 <img class="img-fluid" src="assets/img/photos/restaurant.jpeg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Restaurants</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 mb-3">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/tea.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Salons de thé et Glaciers</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 mb-3">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/macarons.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Spécialités</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/market.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Marchés</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <!-- Culture -->
-        <section class="page-section bg-light" id="culture">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Culture</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6 mb-3">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/monument.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Monuments</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
+                                <div class="portfolio-caption-heading">Gastronomie</div>
+                                <div class="portfolio-caption-subheading text-muted">Nos meilleurs restaurants, Salons de thé et glacier, Marchés gourmands, Spécialités régionales</div>
                             </div>
                         </div>
                     </div>
@@ -228,55 +180,13 @@
                                 <img class="img-fluid" src="assets/img/photos/musee.jpeg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Musées</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
+                                <div class="portfolio-caption-heading">Culture</div>
+                                <div class="portfolio-caption-subheading text-muted">Musées, Festivals, Spectacles</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 mb-3">
                         <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/festival.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Festivals</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/spectacle.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Spectacles</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <!-- Loisirs -->
-        <section class="page-section bg-light" id="loisirs">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Loisirs</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6 mb-3">
-                        <!-- Portfolio item 1-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#">
                                 <div class="portfolio-hover">
@@ -285,38 +195,8 @@
                                 <img class="img-fluid" src="assets/img/photos/parc.jpeg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Activités de Loisirs et Sorties</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 mb-3">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/pool.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Activités Nautiques</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 mb-3">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/garden.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Parcs et Jardins</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
+                                <div class="portfolio-caption-heading">Loisirs</div>
+                                <div class="portfolio-caption-subheading text-muted">Idées sorties, Cinémas, Parcs et Jardins, Activités nautiques</div>
                             </div>
                         </div>
                     </div>
@@ -327,68 +207,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/photos/cinema.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Cinémas</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <!-- Soirée et Bars -->
-        <section class="page-section bg-light" id="bars">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Soirées & Bars</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/night.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Nancy la nuit</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
                                 <img class="img-fluid" src="assets/img/photos/disco.jpeg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Discothèques</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/bar.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bars</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
+                                <div class="portfolio-caption-heading">Nocturne et Bars</div>
+                                <div class="portfolio-caption-subheading text-muted">Nancy la nuit, Bars, Discothèques</div>
                             </div>
                         </div>
                     </div>
@@ -397,63 +220,122 @@
             </div>
         </section>
 
-
-        <section class="page-section bg-light" id="plans">
+        <!-- Gallery -->
+        <section class="page-section bg-dark text-light" id="gallery">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Bons Plans</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+
+                <div class="section-title text-center">
+                <h2>Gallerie</h2>
+                <p>Nancy en couleurs et en images.</p>
                 </div>
+        
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/restaurant.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Nancy City Pass</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/tea.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Salons de thé et Glaciers</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/photos/macarons.jpeg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Spécialités</div>
-                                <div class="portfolio-caption-subheading text-muted">Lorem ipsum</div>
-                            </div>
-                        </div>
-                    </div>
-                    
+                <div class="col-lg-12 d-flex justify-content-center filter-button-group mb-4">
+                    <button data-filter="*" class="btn btn-outline-light filter-active">All</button>
+                    <button data-filter=".filter-loisir" class="btn btn-outline-light">Loisirs</button>
+                    <button data-filter=".filter-urban" class="btn btn-outline-light">Urbanisme</button>
+                    <button data-filter=".filter-hist" class="btn btn-outline-light">Histoire</button>
                 </div>
+                </div>
+        
+                <div class="row gallery-container">
+        
+                <div class="col-lg-4 col-md-6 gallery-item filter-hist">
+                    <div class="gallery-wrap">
+                    <img src="assets/img/photos/IMG-20190419-WA0004.jpg" class="img-fluid" alt="">
+                    <div class="gallery-info">
+                        <h4>Fontaine Neptune</h4>
+                        <p>Elsa D.</p>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 gallery-item filter-loisir">
+                    <div class="gallery-wrap">
+                    <img src="assets/img/photos/IMG-20190705-WA0008.jpg" class="img-fluid" alt="">
+                    <div class="gallery-info">
+                        <h4>Saint Nicolas</h4>
+                        <p>Marta C.</p>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 gallery-item filter-hist">
+                    <div class="gallery-wrap">
+                    <img src="assets/img/photos/IMG_20190621_210421.jpg" class="img-fluid" alt="">
+                    <div class="gallery-info">
+                        <h4>Place de la Carrière</h4>
+                        <p>Esteban M.</p>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 gallery-item filter-hist">
+                    <div class="gallery-wrap">
+                    <img src="assets/img/photos/IMG_20190621_211606.jpg" class="img-fluid" alt="">
+                    <div class="gallery-info">
+                        <h4>Basilique St Epvre</h4>
+                        <p>Maxime A.</p>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 gallery-item filter-web">
+                    <div class="gallery-wrap">
+                    <img src="assets/img/photos/IMG_20191214_193358.jpg" class="img-fluid" alt="">
+                    <div class="gallery-info">
+                        <h4>Place Stanislas</h4>
+                        <p>Tomine L.</p>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 gallery-item filter-loisir">
+                    <div class="gallery-wrap">
+                    <img src="assets/img/photos/parc.jpg" class="img-fluid" alt="">
+                    <div class="gallery-info">
+                        <h4>Foire attractive</h4>
+                        <p>Yann B.</p>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 gallery-item filter-hist">
+                    <div class="gallery-wrap">
+                    <img src="assets/img/photos/IMG_20200125_045335.jpg" class="img-fluid" alt="">
+                    <div class="gallery-info">
+                        <h4>Place de la Carrière</h4>
+                        <p>Marie B.</p>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 gallery-item filter-urban">
+                    <div class="gallery-wrap">
+                    <img src="assets/img/photos/IMG_20200707_210921.jpg" class="img-fluid" alt="">
+                    <div class="gallery-info">
+                        <h4>Nancy Gare</h4>
+                        <p>Rim A.</p>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 gallery-item filter-urban">
+                    <div class="gallery-wrap">
+                    <img src="assets/img/photos/IMG_20200707_210758.jpg" class="img-fluid" alt="">
+                    <div class="gallery-info">
+                        <h4>Quartier st Sébastien</h4>
+                        <p>Philippe G.</p>
+                    </div>
+                    </div>
+                </div>
+        
+                </div>
+        
             </div>
         </section>
+
+
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
@@ -627,19 +509,19 @@
                         </p>
                     </div>
                     <div class="col-lg-4 col-md-9 mb-4 mb-md-0">
-                        Mentions légales
-                        <a class="link-dark text-decoration-none me-3" href="#!">Politique de confidentialité</a>
+                        Mentions légales <br>
+                        <a class="link-dark text-decoration-none me-3" href="#!">Politique de confidentialité</a><br>
                         <a class="link-dark text-decoration-none" href="#!">Missions et engagements</a>
                     </div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/nancytourisme?lang=fr"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/metropolegrandnancy"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/destination-nancy/"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2021 Copyright : <a class="text-dark" href="#">Léa Dieudonat</a>
+                © 2022 Copyright : Léa Dieudonat
                 </div>
         </footer>
         <!-- Portfolio Modals-->
@@ -853,14 +735,12 @@
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
+        <!-- Vendor JS files-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/isotope.pkgd.min.js"></script>
+
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
